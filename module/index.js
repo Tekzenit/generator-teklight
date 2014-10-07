@@ -16,18 +16,15 @@ var TeklightGenerator = yeoman.generators.Base.extend({
     this.log(yosay(
       'Welcome to the super-duper Teklight generator!'
     ));
+    
+    
+    this.argument('name', {
+      required: true,
+      type: String,
+      desc: 'The module name'
+    });
 
-    var prompts = [{
-        name: 'name',
-        message: 'What would you like the name of the module to be?',
-        required: true
-    }];
-
-    this.prompt(prompts, function (props) {
-      this.name = props.name;
-
-      done();
-    }.bind(this));
+    done();
   },
 
   writing: {
