@@ -1,0 +1,21 @@
+{
+  "name": "<%= _.slugify(name) %>",
+  "version": "0.0.0",
+  "devDependencies": {
+    "browserify": "latest",
+    "gulp": "latest",
+    "gulp-browserify": "latest",
+    "gulp-livereload": "latest",
+    "gulp-preprocess": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-webserver": "latest",
+    "process": "latest"
+  },
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-ui-router": "latest",
+    "jquery": "latest"
+  }
+}
